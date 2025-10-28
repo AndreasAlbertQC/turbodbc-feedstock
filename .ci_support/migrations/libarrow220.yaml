@@ -1,6 +1,6 @@
 __migrator:
   build_number: 1
-  commit_message: Rebuild for libarrow 21.0
+  commit_message: Rebuild for libarrow 22.0
   kind: version
   migration_number: 1
   exclude:
@@ -9,13 +9,13 @@ __migrator:
     - arrow-c-glib
 
 libarrow:
+- '22.0'
 - '21.0'
 - '20.0'
 - '19.0'
-- '18.1'
 libarrow_all:
+- '22.0'
 - '21.0'
 - '20.0'
 - '19.0'
-- '18.1'
-migrator_ts: 1753351271.9455743
+migrator_ts: 1761592942.3388329
