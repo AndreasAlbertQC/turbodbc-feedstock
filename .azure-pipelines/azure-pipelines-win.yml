@@ -8,15 +8,6 @@ jobs:
     vmImage: windows-2022
   strategy:
     matrix:
-      win_64_libarrow19.0python3.11.____cpython:
-        CONFIG: win_64_libarrow19.0python3.11.____cpython
-        UPLOAD_PACKAGES: 'True'
-      win_64_libarrow19.0python3.12.____cpython:
-        CONFIG: win_64_libarrow19.0python3.12.____cpython
-        UPLOAD_PACKAGES: 'True'
-      win_64_libarrow19.0python3.13.____cp313:
-        CONFIG: win_64_libarrow19.0python3.13.____cp313
-        UPLOAD_PACKAGES: 'True'
       win_64_libarrow20.0python3.11.____cpython:
         CONFIG: win_64_libarrow20.0python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -43,6 +34,15 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       win_64_libarrow22.0python3.13.____cp313:
         CONFIG: win_64_libarrow22.0python3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+      win_64_libarrow23.0python3.11.____cpython:
+        CONFIG: win_64_libarrow23.0python3.11.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_libarrow23.0python3.12.____cpython:
+        CONFIG: win_64_libarrow23.0python3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_libarrow23.0python3.13.____cp313:
+        CONFIG: win_64_libarrow23.0python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
     maxParallel: 8
   timeoutInMinutes: 360
