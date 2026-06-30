@@ -21,6 +21,11 @@ build:
   # python 3.13 only supported from pyarrow 18
   skip: true  # [py==313]
   {% endif %}
+  {% if libarrow.split(".")[0]|int >= 24 %}
+  # libarrow >= 24 headers require C++20, but turbodbc 5.2.0 does not yet
+  # compile cleanly under C++20 (boost::static_visitor usage), so skip it.
+  skip: true
+  {% endif %}
   # turbodbc already has set the correct RPATHs, conda relocation breaks it
   # so skip it.
   binary_relocation: false
